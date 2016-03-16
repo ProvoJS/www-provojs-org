@@ -10,7 +10,9 @@ app.set('port', port);
 var server = http.createServer(app);
 
 server.listen(port, function() {
-  debug('Listening on port ' + server.address().port);
+    var msg = 'Listening on port ' + server.address().port; 
+    console.log(msg)
+  debug(msg);
 });
 
 server.on('error', function(error) {
